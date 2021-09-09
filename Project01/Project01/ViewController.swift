@@ -6,12 +6,20 @@
 //
 
 import UIKit
+import LogFramework
+import LogStaticLibrary
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+
+        LogFramework.TestLog.log()
+       
+        StaticLibraryLog.log()
+        LogStaticLibrary.TestLog.log()
     }
 
 

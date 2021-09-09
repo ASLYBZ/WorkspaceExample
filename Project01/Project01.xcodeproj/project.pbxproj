@@ -15,6 +15,9 @@
 		2D1328B526E9AD0200B9A976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1328B326E9AD0200B9A976 /* LaunchScreen.storyboard */; };
 		2D1328C026E9AD0200B9A976 /* Project01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1328BF26E9AD0200B9A976 /* Project01Tests.swift */; };
 		2D1328CB26E9AD0200B9A976 /* Project01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1328CA26E9AD0200B9A976 /* Project01UITests.swift */; };
+		2D13294726E9B22600B9A976 /* LogFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D13294626E9B22600B9A976 /* LogFramework.framework */; };
+		2D13294826E9B22600B9A976 /* LogFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D13294626E9B22600B9A976 /* LogFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D13297B26E9B57100B9A976 /* libLogStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D13297A26E9B57100B9A976 /* libLogStaticLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2D13294926E9B22600B9A976 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2D13294826E9B22600B9A976 /* LogFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2D1328A526E9AD0100B9A976 /* Project01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1328A826E9AD0100B9A976 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +66,8 @@
 		2D1328C626E9AD0200B9A976 /* Project01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1328CA26E9AD0200B9A976 /* Project01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project01UITests.swift; sourceTree = "<group>"; };
 		2D1328CC26E9AD0200B9A976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D13294626E9B22600B9A976 /* LogFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LogFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D13297A26E9B57100B9A976 /* libLogStaticLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLogStaticLibrary.a; path = "../../../../Library/Developer/Xcode/DerivedData/WorkspaceExample-gxrcxzqiwzkvtvggljctymolxbkm/Build/Products/Debug-iphoneos/libLogStaticLibrary.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D13297B26E9B57100B9A976 /* libLogStaticLibrary.a in Frameworks */,
+				2D13294726E9B22600B9A976 /* LogFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +104,7 @@
 				2D1328BE26E9AD0200B9A976 /* Project01Tests */,
 				2D1328C926E9AD0200B9A976 /* Project01UITests */,
 				2D1328A626E9AD0100B9A976 /* Products */,
+				2D13294526E9B22600B9A976 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +121,7 @@
 		2D1328A726E9AD0100B9A976 /* Project01 */ = {
 			isa = PBXGroup;
 			children = (
+				2D13297A26E9B57100B9A976 /* libLogStaticLibrary.a */,
 				2D1328A826E9AD0100B9A976 /* AppDelegate.swift */,
 				2D1328AA26E9AD0100B9A976 /* SceneDelegate.swift */,
 				2D1328AC26E9AD0100B9A976 /* ViewController.swift */,
@@ -128,6 +151,14 @@
 			path = Project01UITests;
 			sourceTree = "<group>";
 		};
+		2D13294526E9B22600B9A976 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D13294626E9B22600B9A976 /* LogFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +169,7 @@
 				2D1328A126E9AD0100B9A976 /* Sources */,
 				2D1328A226E9AD0100B9A976 /* Frameworks */,
 				2D1328A326E9AD0100B9A976 /* Resources */,
+				2D13294926E9B22600B9A976 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

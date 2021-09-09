@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:LogStaticLibrary/LogStaticLibrary.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LogFramework/LogFramework.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Project02/Project02.xcodeproj">
    </FileRef>
    <FileRef
